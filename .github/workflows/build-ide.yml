@@ -30,7 +30,7 @@ jobs:
 
   build-linux:
     name: Linux - LwIP ${{ matrix.lwip }} (${{ matrix.chunk }})
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     defaults:
       run:
         shell: bash
@@ -60,7 +60,7 @@ jobs:
   
   build-windows:
     name: Windows
-    runs-on: windows-latest
+    runs-on: self-hosted
     steps:
     - uses: actions/checkout@v5
       with:
@@ -80,7 +80,7 @@ jobs:
 
   build-mac:
     name: macOS
-    runs-on: macOS-latest
+    runs-on: self-hosted
     defaults:
       run:
         shell: bash
