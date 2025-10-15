@@ -11,7 +11,7 @@ permissions:
 jobs:
   pkgrefs-check:
     name: .json template
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     defaults:
       run:
         shell: bash
@@ -24,7 +24,7 @@ jobs:
 
   eboot-check:
     name: eboot .elf
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     defaults:
       run:
         shell: bash
@@ -46,7 +46,7 @@ jobs:
 
   boards-txt-check:
     name: boards.txt.py
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     defaults:
       run:
         shell: bash
